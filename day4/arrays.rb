@@ -22,7 +22,7 @@ my_items.zip(scores).each do |item|
 end
 
 my_items = [1, 2, 3]
- my_items.freeze
+my_items.freeze
 
 puts my_items
 #my_items << 2
@@ -32,10 +32,27 @@ remove = [3, 2, 1]
 new_array = arr1 - remove
 puts new_array
 
-puts arr1.last-1
+puts arr1.last - 1
 
 arr1 = [1, 2, 3, 4, 5, 6, 1, 2, 3]
-arr2 = ["Hello", "World"]
+arr2 = %w(Hello World)
 
 puts arr2[0]
 puts arr2[-1]
+
+numbers = [1, 2, 3]
+
+numbers_two = numbers.map do |x|
+  x + 1
+end
+
+p numbers_two
+
+names = %w(john mike stacy)
+puts names.class
+puts names[0].class
+
+names.map do |name|
+  puts name.capitalize
+end
+
