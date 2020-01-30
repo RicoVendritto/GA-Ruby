@@ -7,6 +7,10 @@ class Student
     @this_student_id = id
   end
 
+  def self.change_ga_class(new_name)
+    @@ga_class = new_name
+  end
+
   def change_name
     puts "What's your name?"
     name = gets.strip.to_s
@@ -27,3 +31,8 @@ john.print_info
 jack.print_info
 alice.change_name
 alice.print_info
+
+Student.change_ga_class("SomethingSomething")
+
+john.print_info
+jack.print_info
