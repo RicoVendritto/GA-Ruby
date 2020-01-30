@@ -30,9 +30,6 @@ end
 ash = Student.new("$ash Money")
 rico = Student.new("Rico V")
 
-# ash.set_student_id(404)
-# rico.set_student_id(555)
-
 puts ash.get_student_name
 puts ash.get_student_id
 
